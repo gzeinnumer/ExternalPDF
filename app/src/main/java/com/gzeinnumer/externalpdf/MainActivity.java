@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             paint.setColor(Color.BLACK);
             paint.setTextSize(23);
             canvas.drawText(sometext, firstTop, marginLeft, paint);
-            //letakan dulu image di direktory yg sudah dibuat
+            //letakan dulu image di direktory yg sudah dibuat,liat di FunctionGlobalDir
             Bitmap bm = resizeImageForImageView(pageWidth,getBitmap(FunctionGlobalDir.getStorageCard+FunctionGlobalDir.appFolder+"/test.jpg"));
             canvas.drawBitmap(bm,marginLeft,firstTop+30, null);
             document.finishPage(page);
